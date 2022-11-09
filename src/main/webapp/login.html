@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>login</title>
+<script language =javascript>
+			function valid()
+			{  
+			var user=document.forms["frm_signup"]["username"].value;
+			var pass =document.forms["frm_signup"]["password"].value;
+			//var tra=document.forms["frm_signup"]["trade"].value;
+			//var cont=document.forms["frm_signup"]["contact"].value;
+			if(user==""||pass=="")
+			{
+			alert("Please fill all fields");
+			return false;
+				}
+				
+			}
+		</script>
+		
+	
+		
+</head>
+
+<body  >
+<center>
+				<form action ="UserLogin" method ="post" name="frm_signup" onsubmit="return valid()">
+					<table border ="5" bgcolor="cyan" height=300 width=400>
+						<tr> <h3>USER LOGIN</h3></tr>
+						<tr>
+							<th>Username</th>
+							<td> <input type = "text" name = "username"></td>
+						</tr>
+						<tr>
+							<th>Password  </th>
+							<td><input type = "text" name = "password"></td>
+						</tr>
+							<tr>
+							<td></td>
+							<td><button  type  = "submit"  align="center" >CreateUser</button></td>
+							
+							
+						</tr>
+						
+					</table>				   
+				</form>
+			</center>s
+			
+
+</body>
+</html>
